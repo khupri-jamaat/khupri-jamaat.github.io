@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Хупри Джамаат - Исламский центр</title>
+    <title>Хупри Джамаат - Село в горах Дагестана</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -117,23 +117,6 @@
             width: 100%;
         }
         
-        .nav-btn {
-            background-color: var(--primary);
-            color: white;
-            border: none;
-            padding: 10px 25px;
-            border-radius: 30px;
-            font-weight: 500;
-            cursor: pointer;
-            transition: var(--transition);
-        }
-        
-        .nav-btn:hover {
-            background-color: var(--secondary);
-            transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-        
         .mobile-menu-btn {
             display: none;
             font-size: 24px;
@@ -144,7 +127,7 @@
         /* Hero Section */
         .hero {
             height: 100vh;
-            background: linear-gradient(rgba(44, 36, 24, 0.7), rgba(44, 36, 24, 0.7)), url('https://images.unsplash.com/photo-1519735777090-ec97162dc266?ixlib=rb-4.0.3') no-repeat center center/cover;
+            background: linear-gradient(rgba(44, 36, 24, 0.5), rgba(44, 36, 24, 0.5)), url('https://blog.welcomedagestan.ru/wp-content/uploads/2021/07/IMG_20190728_112055-1024x768.jpg') no-repeat center center/cover;
             display: flex;
             align-items: center;
             text-align: center;
@@ -165,12 +148,44 @@
             text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
         }
         
-        .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
+        .hadith-box {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            padding: 30px;
+            max-width: 700px;
+            margin: 0 auto 30px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .hadith-text {
+            font-size: 1.5rem;
+            font-style: italic;
+            margin-bottom: 15px;
+            position: relative;
+            padding: 0 20px;
+        }
+        
+        .hadith-text::before, .hadith-text::after {
+            content: '"';
+            font-size: 3rem;
+            position: absolute;
+            color: rgba(255, 255, 255, 0.5);
+        }
+        
+        .hadith-text::before {
+            top: -15px;
+            left: -10px;
+        }
+        
+        .hadith-text::after {
+            bottom: -40px;
+            right: -10px;
+        }
+        
+        .hadith-reference {
+            font-size: 1rem;
+            opacity: 0.9;
         }
         
         .hero-btns {
@@ -198,19 +213,6 @@
         
         .btn-primary:hover {
             background-color: var(--secondary);
-            transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-        }
-        
-        .btn-outline {
-            background-color: transparent;
-            color: white;
-            border: 2px solid white;
-        }
-        
-        .btn-outline:hover {
-            background-color: white;
-            color: var(--secondary);
             transform: translateY(-3px);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
         }
@@ -309,74 +311,6 @@
             margin-bottom: 8px;
         }
         
-        /* Services Section */
-        .services {
-            background-color: var(--light);
-        }
-        
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-        
-        .service-card {
-            background: white;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            transition: var(--transition);
-        }
-        
-        .service-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-        }
-        
-        .service-img {
-            height: 220px;
-            overflow: hidden;
-        }
-        
-        .service-img img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: var(--transition);
-        }
-        
-        .service-card:hover .service-img img {
-            transform: scale(1.1);
-        }
-        
-        .service-content {
-            padding: 30px;
-        }
-        
-        .service-content h3 {
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-        }
-        
-        .service-content p {
-            color: #666;
-            margin-bottom: 20px;
-        }
-        
-        .read-more {
-            color: var(--primary);
-            text-decoration: none;
-            font-weight: 500;
-            display: inline-flex;
-            align-items: center;
-            gap: 5px;
-            transition: var(--transition);
-        }
-        
-        .read-more:hover {
-            gap: 10px;
-        }
-        
         /* Gallery Section */
         .gallery-grid {
             display: grid;
@@ -423,76 +357,6 @@
         .gallery-icon {
             color: white;
             font-size: 40px;
-        }
-        
-        /* Contact Section */
-        .contact {
-            background: linear-gradient(rgba(44, 36, 24, 0.9), rgba(44, 36, 24, 0.9)), url('https://images.unsplash.com/photo-1586773860418-d37222d8fce3?ixlib=rb-4.0.3') no-repeat center center/cover;
-            color: white;
-        }
-        
-        .contact .section-title h2,
-        .contact .section-title p {
-            color: white;
-        }
-        
-        .contact-wrapper {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px;
-        }
-        
-        .contact-info h3 {
-            color: white;
-            font-size: 1.8rem;
-            margin-bottom: 25px;
-        }
-        
-        .contact-detail {
-            display: flex;
-            gap: 15px;
-            margin-bottom: 25px;
-            align-items: flex-start;
-        }
-        
-        .contact-icon {
-            color: var(--accent);
-            font-size: 24px;
-            min-width: 40px;
-        }
-        
-        .contact-text h4 {
-            color: var(--accent);
-            margin-bottom: 5px;
-        }
-        
-        .contact-form .form-group {
-            margin-bottom: 20px;
-        }
-        
-        .contact-form input,
-        .contact-form textarea {
-            width: 100%;
-            padding: 15px;
-            border: none;
-            border-radius: 5px;
-            background: rgba(255, 255, 255, 0.1);
-            color: white;
-            font-size: 16px;
-        }
-        
-        .contact-form input::placeholder,
-        .contact-form textarea::placeholder {
-            color: rgba(255, 255, 255, 0.7);
-        }
-        
-        .contact-form textarea {
-            height: 150px;
-            resize: none;
-        }
-        
-        .contact-form .btn {
-            width: 100%;
         }
         
         /* Footer */
@@ -584,6 +448,10 @@
             .about-content {
                 flex-direction: column;
             }
+            
+            .hadith-text {
+                font-size: 1.3rem;
+            }
         }
         
         @media (max-width: 768px) {
@@ -623,6 +491,11 @@
             .btn {
                 width: 100%;
             }
+            
+            .hadith-text {
+                font-size: 1.1rem;
+                padding: 0 15px;
+            }
         }
         
         @media (max-width: 576px) {
@@ -641,6 +514,10 @@
             .features {
                 grid-template-columns: 1fr;
             }
+            
+            .hadith-box {
+                padding: 15px;
+            }
         }
     </style>
 </head>
@@ -654,13 +531,10 @@
             <nav>
                 <ul id="menu">
                     <li><a href="#home">Главная</a></li>
-                    <li><a href="#about">О нас</a></li>
-                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#about">О селе</a></li>
                     <li><a href="#gallery">Галерея</a></li>
-                    <li><a href="#contact">Контакты</a></li>
                 </ul>
             </nav>
-            <button class="nav-btn">Пожертвовать</button>
             <div class="mobile-menu-btn" id="mobileMenuBtn">
                 <i class="fas fa-bars"></i>
             </div>
@@ -670,11 +544,15 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-content">
-            <h2>Добро пожаловать в Хупри Джамаат</h2>
-            <p>Место духовного роста, единства и милосердия. Присоединяйтесь к нашему сообществу, чтобы вместе создавать лучшее будущее.</p>
+            <h2>Хупри Джамаат</h2>
+            <div class="hadith-box">
+                <div class="hadith-text">
+                    Верующие в своей взаимной любви, милосердии и сочувствии подобны единому телу: если болит один орган, то все тело отзывается на это бессонницей и жаром.
+                </div>
+                <div class="hadith-reference">Бухари, Муслим</div>
+            </div>
             <div class="hero-btns">
-                <a href="#about" class="btn btn-primary">Узнать больше</a>
-                <a href="#contact" class="btn btn-outline">Связаться с нами</a>
+                <a href="#about" class="btn btn-primary">Узнать о селе</a>
             </div>
         </div>
     </section>
@@ -683,96 +561,54 @@
     <section class="section" id="about">
         <div class="container">
             <div class="section-title">
-                <h2>О нашем центре</h2>
-                <p>Узнайте о нашей миссии, истории и ценностях, которые мы разделяем</p>
+                <h2>О нашем селе</h2>
+                <p>Узнайте о нашем горном селе, его истории и красотах природы</p>
             </div>
             <div class="about-content">
                 <div class="about-img">
-                    <img src="https://images.unsplash.com/photo-1601612616766-7a2b8f3c7d3e?ixlib=rb-4.0.3" alt="Мечеть">
+                    <img src="https://blog.welcomedagestan.ru/wp-content/uploads/2021/07/IMG_20190728_111847-1024x768.jpg" alt="Село Хупри Джамаат">
                 </div>
                 <div class="about-text">
-                    <h3>История и духовная миссия</h3>
-                    <p>Хупри Джамаат был основан в 1995 году как центр духовного развития и социальной поддержки мусульманской общины. За годы существования мы выросли в значимое сообщество, объединяющее людей разных национальностей и культур.</p>
-                    <p>Наша миссия - способствовать духовному росту, образованию и взаимопомощи, сохраняя исламские ценности в современном мире. Мы стремимся создать пространство, где каждый чувствует себя принятым и ценным.</p>
+                    <h3>Жемчужина горного Дагестана</h3>
+                    <p>Хупри Джамаат — небольшое горное село, расположенное в Цунтинском районе Республики Дагестан. Оно находится на высоте более 1800 метров над уровнем моря, в окружении величественных гор и живописных долин. Село раскинулось на склоне горы, откуда открываются захватывающие виды на альпийские луга и горные хребты.</p>
+                    <p>Название "Хупри" происходит от аварского слова, означающего "высокогорное селение". Жизнь здесь течет в гармонии с природой, сохраняя вековые традиции и уклад горского быта. Жители села — гостеприимные и трудолюбивые люди, которые с любовью относятся к своей малой родине.</p>
                     <div class="features">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-mountain"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Природа</h4>
+                                <p>Горные пейзажи, альпийские луга, чистейший воздух</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-history"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>История</h4>
+                                <p>Богатое культурное наследие и вековые традиции</p>
+                            </div>
+                        </div>
                         <div class="feature-item">
                             <div class="feature-icon">
                                 <i class="fas fa-hands-helping"></i>
                             </div>
                             <div class="feature-content">
-                                <h4>Благотворительность</h4>
-                                <p>Поддержка нуждающихся семей и социальных проектов</p>
+                                <h4>Община</h4>
+                                <p>Крепкие родственные связи и взаимопомощь</p>
                             </div>
                         </div>
                         <div class="feature-item">
                             <div class="feature-icon">
-                                <i class="fas fa-book-open"></i>
+                                <i class="fas fa-seedling"></i>
                             </div>
                             <div class="feature-content">
-                                <h4>Образование</h4>
-                                <p>Курсы арабского языка, лекции и уроки по исламу</p>
+                                <h4>Хозяйство</h4>
+                                <p>Скотоводство, пчеловодство и земледелие</p>
                             </div>
                         </div>
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <i class="fas fa-users"></i>
-                            </div>
-                            <div class="feature-content">
-                                <h4>Сообщество</h4>
-                                <p>Еженедельные собрания, праздники и мероприятия</p>
-                            </div>
-                        </div>
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <i class="fas fa-mosque"></i>
-                            </div>
-                            <div class="feature-content">
-                                <h4>Поклонение</h4>
-                                <p>Пятничные молитвы, коллективные намазы</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section class="section services" id="services">
-        <div class="container">
-            <div class="section-title">
-                <h2>Наши услуги</h2>
-                <p>Мы предлагаем различные программы и услуги для всех возрастов</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-img">
-                        <img src="https://images.unsplash.com/photo-1585036156171-384164a8c675?ixlib=rb-4.0.3" alt="Религиозное образование">
-                    </div>
-                    <div class="service-content">
-                        <h3>Религиозное образование</h3>
-                        <p>Курсы по изучению Корана, арабского языка и исламских наук для детей и взрослых. Индивидуальный подход и квалифицированные преподаватели.</p>
-                        <a href="#" class="read-more">Подробнее <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <div class="service-img">
-                        <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-4.0.3" alt="Социальная поддержка">
-                    </div>
-                    <div class="service-content">
-                        <h3>Социальная поддержка</h3>
-                        <p>Программы помощи нуждающимся семьям, поддержка пожилых людей, организация бесплатных обедов и распределение благотворительных пожертвований.</p>
-                        <a href="#" class="read-more">Подробнее <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <div class="service-img">
-                        <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?ixlib=rb-4.0.3" alt="Семейное консультирование">
-                    </div>
-                    <div class="service-content">
-                        <h3>Семейное консультирование</h3>
-                        <p>Помощь в решении семейных вопросов, консультации по исламскому праву семейных отношений, поддержка молодых пар и помощь в конфликтных ситуациях.</p>
-                        <a href="#" class="read-more">Подробнее <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -783,109 +619,41 @@
     <section class="section" id="gallery">
         <div class="container">
             <div class="section-title">
-                <h2>Наша галерея</h2>
-                <p>Моменты из жизни нашего сообщества</p>
+                <h2>Красота нашего села</h2>
+                <p>Полюбуйтесь живописными видами Хупри Джамаат</p>
             </div>
             <div class="gallery-grid">
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?ixlib=rb-4.0.3" alt="Мероприятие">
+                    <img src="https://blog.welcomedagestan.ru/wp-content/uploads/2021/07/IMG_20190728_112322-1024x768.jpg" alt="Горный пейзаж Хупри">
                     <div class="gallery-overlay">
                         <div class="gallery-icon">
-                            <i class="fas fa-plus"></i>
+                            <i class="fas fa-search-plus"></i>
                         </div>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1585036156171-384164a8c675?ixlib=rb-4.0.3" alt="Обучение">
+                    <img src="https://blog.welcomedagestan.ru/wp-content/uploads/2021/07/IMG_20190728_112055-1024x768.jpg" alt="Улицы села Хупри">
                     <div class="gallery-overlay">
                         <div class="gallery-icon">
-                            <i class="fas fa-plus"></i>
+                            <i class="fas fa-search-plus"></i>
                         </div>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-4.0.3" alt="Благотворительность">
+                    <img src="https://blog.welcomedagestan.ru/wp-content/uploads/2021/07/IMG_20190728_111847-1024x768.jpg" alt="Природа Хупри">
                     <div class="gallery-overlay">
                         <div class="gallery-icon">
-                            <i class="fas fa-plus"></i>
+                            <i class="fas fa-search-plus"></i>
                         </div>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1601612616766-7a2b8f3c7d3e?ixlib=rb-4.0.3" alt="Мечеть">
+                    <img src="https://blog.welcomedagestan.ru/wp-content/uploads/2021/07/IMG_20190728_111907-1024x768.jpg" alt="Горные тропы">
                     <div class="gallery-overlay">
                         <div class="gallery-icon">
-                            <i class="fas fa-plus"></i>
+                            <i class="fas fa-search-plus"></i>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="section contact" id="contact">
-        <div class="container">
-            <div class="section-title">
-                <h2>Свяжитесь с нами</h2>
-                <p>Мы всегда рады ответить на ваши вопросы</p>
-            </div>
-            <div class="contact-wrapper">
-                <div class="contact-info">
-                    <h3>Наши контакты</h3>
-                    <div class="contact-detail">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h4>Адрес</h4>
-                            <p>ул. Мира, 15, г. Москва, Россия, 115191</p>
-                        </div>
-                    </div>
-                    <div class="contact-detail">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone-alt"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h4>Телефон</h4>
-                            <p>+7 (495) 123-45-67</p>
-                        </div>
-                    </div>
-                    <div class="contact-detail">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h4>Email</h4>
-                            <p>info@khuprijamaat.ru</p>
-                        </div>
-                    </div>
-                    <div class="contact-detail">
-                        <div class="contact-icon">
-                            <i class="fas fa-clock"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h4>Часы работы</h4>
-                            <p>Ежедневно: 8:00 - 22:00</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <form>
-                        <div class="form-group">
-                            <input type="text" placeholder="Ваше имя" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="Ваш Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="tel" placeholder="Ваш телефон">
-                        </div>
-                        <div class="form-group">
-                            <textarea placeholder="Ваше сообщение" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Отправить сообщение</button>
-                    </form>
                 </div>
             </div>
         </div>
@@ -897,49 +665,35 @@
             <div class="footer-grid">
                 <div class="footer-col">
                     <h4>Хупри Джамаат</h4>
-                    <p>Духовный центр, объединяющий людей для духовного роста, образования и социальной поддержки в соответствии с исламскими ценностями.</p>
+                    <p>Горное село в Цунтинском районе Дагестана, сохраняющее вековые традиции и природную красоту.</p>
                     <div class="footer-social">
                         <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-vk"></i></a>
                     </div>
                 </div>
                 <div class="footer-col">
-                    <h4>Быстрые ссылки</h4>
+                    <h4>Навигация</h4>
                     <ul class="footer-links">
                         <li><a href="#home">Главная</a></li>
-                        <li><a href="#about">О нас</a></li>
-                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="#about">О селе</a></li>
                         <li><a href="#gallery">Галерея</a></li>
-                        <li><a href="#contact">Контакты</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Наши услуги</h4>
+                    <h4>Интересное о селе</h4>
                     <ul class="footer-links">
-                        <li><a href="#">Религиозное образование</a></li>
-                        <li><a href="#">Социальная поддержка</a></li>
-                        <li><a href="#">Семейное консультирование</a></li>
-                        <li><a href="#">Молодежные программы</a></li>
-                        <li><a href="#">Праздничные мероприятия</a></li>
+                        <li><a href="#">История Хупри</a></li>
+                        <li><a href="#">Традиции и обычаи</a></li>
+                        <li><a href="#">Природа и экология</a></li>
+                        <li><a href="#">Хозяйство и ремесла</a></li>
                     </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Подписка</h4>
-                    <p>Подпишитесь на нашу рассылку, чтобы получать новости о мероприятиях и программах центра.</p>
-                    <form>
-                        <div class="form-group">
-                            <input type="email" placeholder="Ваш Email" required>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Подписаться</button>
-                    </form>
                 </div>
             </div>
         </div>
         <div class="copyright">
             <div class="container">
-                <p>&copy; 2023 Хупри Джамаат. Все права защищены.</p>
+                <p>&copy; 2023 Село Хупри Джамаат. Наш дом в горах Дагестана.</p>
             </div>
         </div>
     </footer>
